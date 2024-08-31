@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diagram.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Diagram</title>
+</head>
+<body>
+    <div class="chart">
+        <nav>
+            <ul>
+                <li class="a">
+                    <a href="Converter_Home.html">Home</a>
+                    <a href="converter.html">Converter</a>    
+                    <a href="diagram.html">Diagram</a>  
+                </li>
+                <!-- <li class="btn">
+                    <button>Login In</button>
+                    <button>Sign Up</button>
+                    <button>Use For free</button>
+                </li> -->
+            </ul>
+        </nav>
+        <h2>ExchangeRate Chart</h2>
+        <div class="chart_types">
+            <button data-chart-type="bar">Bar</button>
+            <button data-chart-type="line">Line</button>
+            <button data-chart-type="doughnut">Doughtnut</button>
+            <button data-chart-type="polarArea">PolarArea</button>
+            <button data-chart-type="radar">Radar</button>
+        </div>
+        <div class="chart">
+            <canvas id="mychart"></canvas>
+        </div>
+    </div>
+    <script src="diagram.js"></script>
+</body>
+</html>

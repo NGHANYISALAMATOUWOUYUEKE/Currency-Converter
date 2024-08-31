@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="converter.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="a">
+                <a href="Converter_Home.html">Home</a>
+                <a href="converter.html">Converter</a>    
+                <a href="diagram.html">Diagram</a>  
+            </li>
+            <!-- <li class="btn">
+                <button>Login In</button>
+                <button>Sign Up</button>
+                <button>Use For free</button>
+            </li> -->
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="Converter">
+            <h1>Currency Convertor</h1>
+            <div class="box">
+                <div class="left_box">
+                    <select name="Currency" id="Currency" id="CurrencyA"></select>
+                    <label for="num">From</label>
+                    <input type="number" name="num" id="num" min="1">
+                </div>
+                <div class="right_box">
+                    <select name="Currency" id="Currency" id="CurrencyB"></select>
+                    <label for="ans">To</label>
+                    <input type="text" name="ans" id="ans" min="1">
+                </div>
+            </div>
+            <div class="button">
+                <button id="btn">Convert</button>
+                <button id="hist_btn" onclick="historyShow()">History</button>
+            </div>
+        </div>
+        <div id="hist_view">
+            <!-- <div class="history">
+                <li>
+                    <button>cancel</button>
+                </li>
+                
+            </div> -->
+        </div>  
+    </div>
+    
+    <script src="Converter.js"></script>
+</body>
+</html>
